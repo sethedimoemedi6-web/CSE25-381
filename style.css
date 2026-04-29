@@ -1,8 +1,177 @@
-h1{
-    color:rgb(13, 0, 255);
-}
-img{
-    width:50%;
-    height:auto;
 
+    /* ===== IMPORT FONT ===== */
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
+
+/* ===== CSS VARIABLES ===== */
+ :root {
+  --black: #0a0a0a;
+  --dark: #111111;
+  --orange: #ff6b00;
+  --orange-glow: #ff8c00;
+  --orange-dim: #cc5500;
+  --white: #f0f0f0;
+  --white-dim: #a0a0a0;
 }
+
+/* ===== RESET & BASE ===== */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Rajdhani', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar.bg-dark {
+  background-color: #0d0d0d !important;
+  border-bottom: 1px solid var(--orange);
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--orange) !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px var(--orange);
+  transition: text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+  text-shadow: 0 0 24px var(--orange), 0 0 48px var(--orange-glow);
+}
+
+.nav-link {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--white-dim) !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--orange) !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===== HERO SECTION ===== */
+body > h1,
+body > h2,
+body > h3 {
+  text-align: center;
+}
+
+body > h1 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 5rem;
+  line-height: 1.1;
+  text-shadow:
+    0 0 20px rgba(255, 107, 0, 0.7),
+    0 0 60px rgba(255, 107, 0, 0.3);
+  animation: fadeSlideDown 0.8s ease both;
+}
+
+body > h2:nth-of-type(1) {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  color: var(--white);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  animation: fadeSlideDown 0.8s 0.2s ease both;
+}
+
+body > h2:nth-of-type(2) {
+  font-family: 'Orbitron', monospace;
+  font-weight: 400;
+  font-size: clamp(0.85rem, 2vw, 1.2rem);
+  color: var(--orange-dim);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+  animation: fadeSlideDown 0.8s 0.4s ease both;
+}
+
+body > h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: var(--white-dim);
+  letter-spacing: 0.12em;
+  margin-top: 2rem;
+  animation: fadeSlideDown 0.8s 0.6s ease both;
+}
+
+/* ===== BACKGROUND GRID EFFECT ===== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 107, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 0, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== NAVBAR TOGGLER ===== */
+.navbar-toggler {
+  border-color: var(--orange) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg);
+} */
+ */ 
