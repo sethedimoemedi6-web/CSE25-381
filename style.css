@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     /* ===== IMPORT FONT ===== */
 /* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
@@ -11,6 +12,74 @@
   --orange-dim: #cc5500;
   --white: #f0f0f0;
   --white-dim: #a0a0a0;
+=======
+/* Binance-inspired Crypto Cool Theme */
+
+body {
+  background-color: #0B0E11; /* Dark background */
+  color: #EAECEF; /* Light text for readability */
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #FCD535; /* Binance gold accent */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #B7BDC6; /* Softer gray for body text */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.crypto-highlight {
+  background: linear-gradient(90deg, #FCD535, #FFD84D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+button {
+  background-color: #FCD535;
+  color: #0B0E11;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFD84D;
+  transform: scale(1.05);
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid #1E2329;
+  border-radius: 8px;
+  background-color: #12161C;
+  box-shadow: 0 0 20px rgba(252, 213, 53, 0.1);
+}
+
+.icon {
+  font-size: 32px;
+  color: #FCD535;
+  margin-bottom: 10px;
+>>>>>>> e772825ca294da839d9f1e9851e39517cf1c6d53
 }
 
 /* ===== RESET & BASE ===== */
