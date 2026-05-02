@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+ HEAD
 
     /* ===== IMPORT FONT ===== */
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
+{ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');}
 
 /* ===== CSS VARIABLES ===== */
  :root {
@@ -12,7 +12,7 @@
   --orange-dim: #cc5500;
   --white: #f0f0f0;
   --white-dim: #a0a0a0;
-=======
+ }
 /* Binance-inspired Crypto Cool Theme */
 
 body {
@@ -44,6 +44,7 @@ p {
 
 .crypto-highlight {
   background: linear-gradient(90deg, #FCD535, #FFD84D);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -79,7 +80,7 @@ button:hover {
   font-size: 32px;
   color: #FCD535;
   margin-bottom: 10px;
->>>>>>> e772825ca294da839d9f1e9851e39517cf1c6d53
+
 }
 
 /* ===== RESET & BASE ===== */
@@ -242,5 +243,5 @@ body > * {
 
 .navbar-toggler-icon {
   filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg);
-} */
- */ 
+} 
+ 
