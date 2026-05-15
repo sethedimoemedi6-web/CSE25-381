@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <metacharset = "UTF-8">
+<metaname = "viewpoint" content="width=device-width, initial scale =1.0">
+<title>FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<style>
+  /* ===== FAQ PAGE ===== */
+.faq-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+/* PAGE TITLE */
+h1 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin: 2.5rem auto 2rem;
+  animation: fadeSlideDown 0.7s ease both;
+}
+
+/* REMOVE DEFAULT OL STYLING */
+ol {
+  list-style: none;
+  counter-reset: faq-count;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* EACH FAQ ITEM = SOLITAIRE CARD */
+ol li {
+  counter-increment: faq-count;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--orange);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  color: var(--white-dim);
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+
+ol li:hover {
+  background: #1e1e1e;
+  border-color: var(--orange);
+  transform: translateX(3px);
+}
+
+/* NUMBER BADGE */
+ol li::before {
+  content: counter(faq-count, decimal-leading-zero);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: var(--orange-dim);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+ol li:hover::before {
+  color: var(--orange);
+}
+
+/* QUESTION HEADING */
+ol li h3 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  font-size: 0.68rem;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem 0;
+}
+
+/* ANSWER TEXT */
+ol li h3 + * ,
+ol li {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  color: var(--white-dim);
+  line-height: 1.6;
+}
+
+/* DIVIDER LINE BETWEEN Q AND A */
+ol li h3 {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  ol {
+    max-width: 100%;
+  }
+}
+.logo-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--orange);
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo-circle:hover {
+  box-shadow: 0 0 16px rgba(255, 107, 0, 0.5);
+}
+
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+</style>
+    </head>
+<body>
+  
+      <!-- <img src="images/faq.png"
+ -->
+
+        
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+  
+    <a class="navbar-brand logo-circle" href="index.html">
+  <img src="images/logo.png.avif" alt="logo">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="syllabus.html">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quizzes.html">Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="article.html">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1> Crypto Frequently Asked Questoins</h1>
+
+<ol>
+
+  <li ><h3>What is cryptocurrency?</h3>
+Cryptocurrency is a digital or virtual currency secured by cryptography, 
+making it nearly impossible to counterfeit. 
+Unlike traditional fiat currencies (like the US Dollar), most cryptocurrencies 
+are decentralized networks based on blockchain technology,
+ a distributed ledger enforced by a disparate network of computers</li>
+ 
+
+  <li> <h3>What is Bitcoin?</h3>
+Bitcoin is the first and most widely adopted cryptocurrency, created in 2009.
+ It operates as a peer-to-peer electronic cash system, allowing users to send, receive, and store value without intermediate financial institutions</li>
+
+
+  <li><h3> What is Blockchain?</h3>  A blockchain is a decentralized, distributed, and public digital ledger used to record transactions across
+     many computers so that the record cannot be altered retroactively.</li>
+     
+     
+     
+     
+ <li><h3> How do I keep my cryptocurrency safe?</h3>Use Cold Storage: Use hardware wallets (offline devices) for long-term storage.
+Enable 2FA: Activate two-factor authentication (2FA) on all exchange accounts.
+Protect Seed Phrases: Never share your seed phrase (private keys) with anyone, and store it offline.</li></div>
+
+
+
+  <li>
+     <h3>How are cryptocurrency prices determined?</h3>
+Crypto prices are driven by supply and demand, influenced by market sentiment, adoption rates, regulatory news, and macroeconomic factors. </li>
+  
+
+
+<li> <h3>What is a "wallet" in crypto?</h3>A crypto wallet is a software program or hardware device that allows users to store, send, and receive digital assets.
+   It stores the private keys needed to authorize transactions on the blockchain.</li>
+
+
+
+
+
+  <li><h3>What is a central exchange (CEX) vs. decentralized exchange (DEX)? </h3>
+CEX (e.g., Coinbase, Binance): A centralized platform that acts as an intermediary, holding your funds and managing security.
+DEX (e.g., Uniswap): A platform that allows peer-to-peer trading directly from your own wallet without an intermediary</li>
+
+
+
+
+  <li><h3>What is "staking"?</h3>
+Staking is the process of locking up crypto assets to help verify transactions on a Proof-of-Stake (PoS) blockchain. In return, participants earn rewards, similar to earning interest in a bank account. </li>
+
+
+
+ 
+<li><h3> What is a Stablecoin?</h3>
+A stablecoin is a type of cryptocurrency designed to have a stable price, usually pegged to a fiat currency like the US Dollar (e.g., USDT, USDC). </li>
+
+
+
+
+
+  <li> <h3>What are the main risks of investing in crypto?</h3>
+Key risks include high price volatility, potential for security breaches (hacks/scams), regulatory uncertainty, and the risk of losing
+access to private keys, which leads to permanent loss of funds</li>
+
+
+
+
+  <li><h3> How can I start buying cryptocurrency?</h3>
+You can buy cryptocurrency on reputable exchanges by creating an account, verifying your identity (KYC), linking 
+a bank account or credit card, and placing an order. </li>
+
+
+
+</ol>
+
+</body>
+
+</html>
